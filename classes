@@ -1,0 +1,134 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    class Exercicios
+    {
+
+        public void atividade1()
+        {
+            //Calcular e imprimir a soma dos números naturais de 1 ao 100.
+
+            int aux = 0;
+
+            for (int i = 0; i < 101; i++)
+            {
+
+
+                aux = aux + i;
+
+
+            }
+
+            Console.WriteLine(aux);
+            Console.ReadKey();
+        }
+
+
+        public void atividade2()
+        {
+
+            //Imprimir os múltiplos de 7 menores que 200.
+
+
+            for (int i = 1; i < 201; i++)
+            {
+
+                if (i % 7 == 0)
+
+                    Console.WriteLine(i);
+
+            }
+
+            Console.ReadLine();
+        }
+
+        public void atividade3()
+        {
+            //Calcular e imprimir os números divisíveis por 4 menores que 100
+            int aux = 0;
+
+            for (int i = 1; i < 101; i++)
+            {
+                aux = i / 4;
+
+                if (i % 4 == 0)
+                    Console.WriteLine(i + " dividido por 4 = " + aux + " e o resto é 0");
+
+            }
+            Console.ReadLine();
+        }
+
+        public void atividade4()
+        {
+            /* Calcular o valor de S, usando os 20 primeiros termos da série
+            abaixo:
+             x     x       x      x
+        S = --- - ---  +  --- -  ---
+             1     2       3      4    */
+
+            float x = 40;
+            float s = 0;
+
+
+            for (float i = 1; i < 21; i++)
+            {
+                if (i % 2 == 0)
+                    s = s - (x / i);
+                else
+                    s = s + (x / i);
+
+
+            }
+
+            Console.WriteLine(s);
+            Console.ReadLine();
+        }
+
+        public void atividade5a()
+        {
+            //exercicio 5.1
+            //Imprimir a tabuada do número 5 utilizando FOR
+            Console.WriteLine("Imprimir a tabuada do número 5 utilizando FOR");
+
+            int aux = 0;
+
+            for (int i = 1; i < 11; i++)
+            {
+                aux = i * 5;
+                Console.WriteLine(i + " x 5 = " + aux);
+            }
+            Console.WriteLine("Pressione ENTER para ler via WHILE");
+            Console.ReadLine();
+
+
+        }
+
+        public void atividade5b()
+        {
+            //exercicio 5.2
+            //Imprimir a tabuada do número 5 utilizando WHILE
+            Console.WriteLine("Imprimir a tabuada do número 5 utilizando WHILE");
+            int i = 1;
+            int aux = 0;
+            while (i < 11)
+            {
+
+                aux = i * 5;
+                Console.WriteLine(i + " x 5 = " + aux);
+                i++;
+
+
+
+            }
+            Console.WriteLine("Pressione ENTER para sair");
+            Console.ReadLine();
+        }
+
+       
+    }
+}
