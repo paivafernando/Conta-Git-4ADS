@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //Imprimir a tabuada do número 5 utilizando os 2 tipos de estruturas
+            //de repetição FOR e WHILE.
+
+            Exercicios at = new Exercicios();
+
+            // at.atividade1();
+
+            // at.atividade2();
+
+            // at.atividade3();
+
+            // at.atividade4();
+
+            //  at.atividade5a();
+
+            //  at.atividade5b();
+
+            // at.atividade6();
+
+
+        }
+
+    }
+
+
+}
+
