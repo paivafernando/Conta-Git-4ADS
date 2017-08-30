@@ -1,0 +1,49 @@
+public void atividade8()
+        {
+
+            float aux = 0;
+
+            Console.Write("Digite a quantidade de notas a ser inserida: ");
+            int vezes = int.Parse(Console.ReadLine());
+            float[] vetor = new float[vezes];
+
+            for (int i = 0; i < vezes ; i++)
+            {
+                Console.Write("Digite as notas: ");
+                float v = float.Parse(Console.ReadLine());
+                
+                vetor[i] = v;
+            }
+            foreach (float i in vetor)
+            {
+                aux = aux + i;
+            }
+            float media = aux / vetor.Length;
+            
+            Console.WriteLine("Média: " + media);
+            Console.Write("Pressione Enter para saber as notas maiores que a média");
+            Console.ReadLine();
+
+            foreach (float i in vetor)
+            {
+               if ( i > media)
+                {
+                    Console.WriteLine("Maior que a média: " + i);
+                }
+            }
+
+            Console.Write("Pressione Enter para saber as notas menores que a média");
+            Console.ReadLine();
+
+            foreach (float i in vetor)
+            {
+                if (i <= media)
+                {
+                    Console.WriteLine("Menor que a média: " + i);
+                }
+            }
+
+            Console.ReadLine();
+
+
+        }
