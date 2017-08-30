@@ -28,8 +28,11 @@ namespace ConsoleApp6
 
             //  at.atividade5b();
 
-            // at.atividade6();
-
+            // at.atividade6a();
+            
+            // at.atividade6b();
+            
+             // at.atividade7();            
 
         }
 
