@@ -1,0 +1,40 @@
+ public void atividade10()
+        {
+
+            ArrayList listaDeSalario = new ArrayList();
+
+            int aux = 0;
+            bool coletor = true;
+
+            while (coletor)
+            {
+                Console.WriteLine("Digite o salário e para sair digite -1: ");
+                float sal = float.Parse(Console.ReadLine());
+                if (sal != -1)
+                {
+                    listaDeSalario.Add(sal);
+                    aux++;
+                }
+                else
+                {
+                    coletor = false;
+                }
+
+            }
+
+            Console.WriteLine("Digite o valor do reajuste (%): ");
+            float reajuste = float.Parse(Console.ReadLine());
+            reajuste /= 100;
+            
+            
+            for (int i = 0; i < aux ; i++)
+            {
+                float salReajustado = float.Parse(listaDeSalario[i].ToString());
+                salReajustado += float.Parse(listaDeSalario[i].ToString()) * reajuste;
+                                
+                Console.WriteLine(salReajustado);
+
+            }
+
+            Console.ReadLine();
+        }
