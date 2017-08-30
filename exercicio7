@@ -1,0 +1,30 @@
+public void atividade7()
+        {
+
+
+            
+
+
+            String[,] lista = new String[,]{ { "p", "3" }, { "p", "6" }, { "p", "9" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "2" }, { "v", "3" } };
+
+             
+            int somaVista = 0;
+            int somaPrazo = 0;
+            
+            for (int i = 0; i < 25; i++)
+            {
+                if (lista[i, 0] == "v")// aqui o valor total a vista
+                    somaVista += int.Parse(lista[i, 1]);
+                else// aqui o valor total a Prazo
+                    somaPrazo += (int.Parse(lista[i, 1])/3);
+                   
+            }
+            
+
+            Console.WriteLine("Valor total de compras a vista: " + somaVista);
+            Console.WriteLine("Valor total de compras a prazo: " + somaPrazo);
+            Console.WriteLine("Valor total de compras: " + (somaVista+somaPrazo));
+            Console.ReadLine();
+            
+             
+        }
