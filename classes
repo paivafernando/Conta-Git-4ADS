@@ -128,7 +128,63 @@ namespace ConsoleApp6
             Console.WriteLine("Pressione ENTER para sair");
             Console.ReadLine();
         }
+       
+       
+        public void atividade6a()
+        {
+            //Imprimir a tabuada de qualquer número fornecido pelo usuário.
+            // Para finalizar utilize o número –1. (Utilize os 2 tipos de repetição: While
+            //- For)
 
+            int vezes = 0;
+
+            while (vezes != -1)
+            {
+                Console.Write("Digite um número: ");
+                vezes = int.Parse(Console.ReadLine());
+
+
+
+
+                int aux = 0;
+
+                for (int i = 1; i < 11; i++)
+                {
+                    aux = i * vezes;
+                    Console.WriteLine(i + " x " + vezes + " = " + aux);
+                }
+            }
+
+        }
+
+        public void atividade6b()
+        {
+            //Imprimir a tabuada de qualquer número fornecido pelo usuário.
+            // Para finalizar utilize o número –1. (Utilize os 2 tipos de repetição: While
+            //- For)
+
+            int vezes = 0;
+
+            while (vezes != -1)
+            {
+                Console.Write("Digite um número: ");
+                vezes = int.Parse(Console.ReadLine());
+
+                int i = 1;
+                int aux = 0;
+
+                while (i < 11)
+                {
+
+                    aux = i * vezes;
+                    Console.WriteLine(i + " x " + vezes + " = " + aux);
+                    i++;
+                }
+
+            }
+        }
+
+        
        
     }
 }
