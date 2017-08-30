@@ -1,0 +1,52 @@
+public void atividade9()
+        {
+
+         
+            bool cont = true;
+
+            IList<Aluno> listaDeAlunos = new List<Aluno>();
+
+
+
+            while (cont)
+            {
+                var alunos = new Aluno();
+                Console.WriteLine("Digite nome do Aluno: ");
+                alunos.nome = (Console.ReadLine());
+                Console.WriteLine("Digite nota do Aluno: ");
+                alunos.nota = float.Parse(Console.ReadLine());
+
+                listaDeAlunos.Add(alunos);
+
+                Console.WriteLine("Digite 1 para inserir outro aluno ou 0 para sair: ");
+                int result = int.Parse(Console.ReadLine());
+                if (result == 0)
+                {
+                    cont = false;
+                }
+            }
+
+            float contador = 0;
+            float media = 0;
+
+            foreach (Aluno teste  in listaDeAlunos)
+            {
+                media += teste.nota;
+                contador++;
+                
+            }
+            media /= contador;
+            Console.WriteLine("Média da turma: " + media);
+            Console.WriteLine("Pressione ENTER para saber os alunos com nota maior que a média");
+            Console.ReadLine();
+
+
+            foreach (Aluno maior in listaDeAlunos)
+            {
+               if (maior.nota > media)
+               Console.WriteLine(maior.nome);
+
+            }
+
+            Console.ReadLine();
+        }
