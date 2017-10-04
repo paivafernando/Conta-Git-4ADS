@@ -1,0 +1,7 @@
+<NavigationWindow x:Class="Agenda.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Agenda" Height="418.575" Width="474.898" Source="AgendaHome.xaml">
+
+</NavigationWindow>
+  
